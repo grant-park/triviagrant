@@ -1,0 +1,38 @@
+﻿<!-- 
+ .d8888b.                           888         8888888b.                  888      
+d88P  Y88b                          888         888   Y88b                 888      
+888    888                          888         888    888                 888      
+888        888d888 8888b.  88888b.  888888      888   d88P 8888b.  888d888 888  888 
+888  88888 888P"      "88b 888 "88b 888         8888888P"     "88b 888P"   888 .88P 
+888    888 888    .d888888 888  888 888         888       .d888888 888     888888K  
+Y88b  d88P 888    888  888 888  888 Y88b.       888       888  888 888     888 "88b 
+ "Y8888P88 888    "Y888888 888  888  "Y888      888       "Y888888 888     888  888 
+-->
+
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Created Question</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/style.css') }}">
+    <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <h2>
+        Thank you for your submission.
+    </h2>
+    <div class="box">
+        You asked: "{{ question }}"
+    </div>
+    <form method="post">
+        <p style="font-size:30px; text-align:center;">
+        Share this question for your friends to answer!<br />
+        <a style="color: orange;" href="http://triviagrant.azurewebsites.net/question/{{ title }}">http://triviagrant.azurewebsites.net/question/{{ title }}</a>
+        </p>
+    </form>
+
+</body>
+<div class="footer">Copyright Grant Hyun Park 2015</div>
+</html>
